@@ -176,11 +176,3 @@ gulp.task('default', () => {
     runSequence(['clean', 'wiredep'], 'build', resolve);
   });
 });
-
-gulp.task('scripts', ['clean'], function () {
-     return gulp.src('js/*.js')
-       .pipe(uglify().on('error', function(e){
-           console.log(e);
-        }))
-       .pipe(gulp.dest('minjs'));
- });
