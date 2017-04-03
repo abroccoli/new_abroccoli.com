@@ -15,6 +15,10 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-image: url(../images/IMG_0168.JPG);
+  @media screen and (max-width: 900px) {
+    background-color: #999;
+    background-image: none;
+  }
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
